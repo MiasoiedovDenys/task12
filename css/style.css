@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: black;
+}
+
+#wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .traffic_light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  min-height: 30vh;
+  padding-top: 20px;
+  background-color: #ec9016;
+}
+
+main .traffic_light .traffic_light__block, main .traffic_light .traffic_light__pole {
+  width: 150px;
+  padding: 0px;
+  background-color: black;
+  border-radius: 7%/5%;
+  -webkit-border-radius: 7%/5%;
+  -moz-border-radius: 7%/5%;
+  -ms-border-radius: 7%/5%;
+  -o-border-radius: 7%/5%;
+}
+
+main .traffic_light .traffic_light__pole {
+  width: 30px;
+  border-radius: 0%;
+  min-height: 100px;
+}
+
+li {
+  min-height: 80px;
+  border-radius: 50%;
+  margin: 35px;
+  width: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.block_color1 {
+  background-color: red;
+  animation-name: firslight;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.block_color2 {
+  background-color: yellow;
+  animation-name: secondlight;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.block_color3 {
+  background-color: green;
+  animation-name: thirdlight;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes firslight {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: red;
+  }
+  25% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes secondlight {
+  0% {
+    background-color: black;
+  }
+  20% {
+    background-color: black;
+  }
+  25% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: yellow;
+  }
+  45% {
+    background-color: black;
+  }
+  80% {
+    background-color: black;
+  }
+  85% {
+    background-color: yellow;
+  }
+  95% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes thirdlight {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: black;
+  }
+  45% {
+    background-color: green;
+  }
+  55% {
+    background-color: green;
+  }
+  60% {
+    background-color: black;
+  }
+  65% {
+    background-color: green;
+  }
+  70% {
+    background-color: black;
+  }
+  75% {
+    background-color: green;
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
